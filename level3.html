@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>LEVEL 3</h1>
+    <big><i>Let's Start</i></big>
+    <h2>FORM TAGS</h2>
+    <p>Form tags are used to create interactive forms in HTML. They allow users to input data that can be sent to a server for processing. The main form tag is &lt;form&gt;.Isme action attribute hai jo ke form ko submit karne ke liye istemal hota hai.lkn filhal html me koi server nahi hai isliye hum isse sirf front end par dekh sakte hain.</p>
+    <b>EXAMPLE:</b>
+    <p>&lt;form action="submit.php" method="post"&gt; &lt;/form&gt;</p>
+    <h3>HOW TO MAKE FORMS</h3>
+    <p>Forms banane ke liye humein kuch basic tags ki zaroorat hoti hai:</p>
+    <h3>Input tag:</h3>
+    <p>Input tag forms bnane ke liye istsmal hota h.Ye ek self closing tag h mtlb isme closing tag nhi hota or jesa ke ap jante h ke attributes opening tag ke andr ate h.</p>
+     <h3>ATTRIBUTES of Input Tag:</h3>
+     <p><b>type</b> attribute text ho to user se text me input liya jata h agr apka type email h to ap isme email likh skte h phone h to number likh skte h date h to date kuch b likh skte h.</p> 
+       <p><b> name</b> attribute se input ki value ko identify kiya jata h ke input h kis chez ka jese agr me name me user name likh dun to server ko pta chl jaye ga ke ye user name h.</p>
+        <p><b>placeholder</b> attribute se input field me default text dikhaya jata h default text means wo text jo tb dikhta h jb user ne kuch na likha ho or jese hi user kuch likhe to wo chla jaye.</p>
+        <p><b>required</b> attribute se input field ko mandatory banaya jata h yani user ko form submit karne se pehle is field me kuch na kuch likhna hi padega.</p>
+     <p><b>value</b>attribute isi liye kiya jata h ta ke server ko pta chl jaye ke ye form kis chez ke liye h.</p>
+        <b>id</b> attribute se input field ko uniquely identify kiya jata h ta ke agar multiple input fields hain to unhe alag alag identify kiya ja sake.
+     <b>LIKE THIS:</b>
+     <br>
+     <img src="ss20.png" alt="input example">
+     <br>
+
+<b> YOU CAN WRITE:</b>    
+<br>
+&lt; input<b> type="text" </b>name="username" placeholder="Username" required&gt;
+<br>
+&lt; input<b> type="email" </b>name="email" placeholder=" Write email" required&gt;
+<br>
+&lt; input<b> type="password" </b>name="password" placeholder="Write password" required&gt;
+<br>
+&lt; input<b> type="number" </b>name="phone" placeholder="Write phone number" required&gt;
+<br>
+&lt; input<b> type="date" </b>name="dob" placeholder="Write date of birth" required&gt;
+<br>
+&lt; input<b> type="submit" </b>value="Submit"&gt;
+<br>
+&lt;input<b> type="reset" </b>value="Reset"&gt;
+<br>
+&lt;input <b>type="checkbox"</b> name="subject"value="biology" required&gt; biology
+<br>
+<i>In this attribute name=subject h or value=biology jo server ko btata h ke subject=biology.Isi trha ap koi b checkbox create kr skte h.</i>
+<br>
+<b>To create radio button:</b>
+<br>
+<i>You need to use the same name attribute for all radio buttons in a group q ke agr ap name attribte same nhi rakhein ge to apke sare radio button select ho jayein ge agr ap chahte h ke koi ek select ho sb me se to apko name attribute same rkhna hoga.Value me apni option likhein ge jese name=gender or value=female h to means radio button female ka h.apke value attribute or wo term jo apne tag ke bahir likhi h wo same honi chahiye q ke jo term user ko dikh rhi h wohi server ko dikhni chahiye ta ke server sahi value save kre .Frz krte h apne value =phy rkhi h or user ke liye bio likh diya h to user value attribute to dekh nhi skta to wo usko bio smj ke add kre ga or server usko phy save kre ga.</i>
+<br>
+&lt;input <b>type="radio" </b>name="gender" value="male" required&gt; Male
+<br>
+&lt;input <b>type="radio" </b>name="gender" value="female" required&gt; Female
+<br>
+<b>LIKE THIS:</b>
+<br>
+<img src="ss21.png" alt="radio button example">
+<h3>Drop down:</h3>
+<p>Drop down list banane ke liye humein <b>&lt;select&gt;</b> tag ka istemal karna hota hai. Iske andar hum <b>&lt;option&gt;</b> tags ka istemal karte hain jismein har option ko define kiya jata hai or option tag ke andr hm apna data likhte h.</p>
+<br>
+<b>LIKE THIS:</b>
+<br>
+&lt;select name="subject" required&gt;
+<br>
+&lt;option value="biology"&gt;Biology&lt;/option&gt;
+<br>
+&lt;option value="physics"&gt;Physics&lt;/option&gt;
+<br>
+&lt;option value="chemistry"&gt;Chemistry&lt;/option&gt;
+<br>
+&lt;/select&gt;
+<br>
+<img src="ss22.png" alt="dropdown example">
+<h3>Textarea:</h3>
+<p>Textarea banane ke liye humein <b>&lt;textarea&gt;</b> tag ka istemal karna hota hai. Iske andar hum apna data likhte hain or ye ek multi-line text input field provide karta hai jisme hm apna feedback wagera de sakte hain.</p>
+<br>
+<br>
+<b>LIKE THIS:</b>
+<br>
+&lt;textarea name="feedback" placeholder="Write your feedback here..." rows="5" cols="30" required&gt; &lt;/textarea&gt;
+<i>In this<b> rows </b>attribute represent rows and <b>cols</b> attribute represent columns</i>
+<br>
+<b>LIKE THIS:</b>
+<br>
+<img src="ss23.png" alt="textarea example">
+<br>
+<h3>Label tag:</h3>
+<p>Label tag ka istemal form elements ko identify karne ke liye kiya jata hai weak eyesight walo ke liye.Is se agr ap radio button ke text pe b click krte h to wo select ho jata h. Label tag ko <b>&lt;label&gt;</b> tag ke andar likha jata hai or iske andar <b>for</b> attribute ka istemal kiya jata hai jismein hum input field ka id dete hain means ke agr id="username" hai to label me for=username hoga jis se server ko ptaa chle ga ke ye label is specific input field ke liye hai.</p>
+<br>
+<b>LIKE THIS:</b>
+<br>
+<img src="ss21.png" alt="label example">
+<br>
+<a href="tasks.html"><big><b>Go to Tasks</b></big></a> and do task no.3
+</body>
+</html>
